@@ -1,14 +1,19 @@
 <?php
+/**
+ * ## classe Categoria
+ * defininisce la classe categoria
+ * @author Giuseppe Donnici
+ */
 class Categoria {
     public $nome;
-    public $razza;
+    public $icona;
 
     /**
      * @param String $_nome
      */
-    function __construct($_nome, $_razza = "") 
+    function __construct($_nome, $_icona) 
     {
         $this->nome = $_nome;
-        $this->razza = $_razza;
+        $this->icona = $_icona;
     }
 }

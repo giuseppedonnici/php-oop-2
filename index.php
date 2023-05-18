@@ -6,10 +6,10 @@
  Stampiamo delle card contenenti i dettagli dei prodotti, come immagine, titolo, prezzo, icona della categoria ed il tipo di articolo che si sta visualizzando (prodotto, cibo, gioco, cuccia).
  */
 
-require_once __DIR__ . "/Models/Prodotto.php";
+require __DIR__ . "/db.php";
 
-$prodotto_1 = new Prodotto("pippo", 5.5, new Categoria("cane"));
-$prodotto_2 = new Prodotto("pippa", 7.5, new Categoria("gatto"));
+include __DIR__ . "/Views/layout/head.php";
 
+include __DIR__ . "/Views/partials/content.php";
 
-var_dump($prodotto_1, $prodotto_2);
+include __DIR__ . "/Views/layout/footer.php";
