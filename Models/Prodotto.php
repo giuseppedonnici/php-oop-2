@@ -28,4 +28,12 @@ require_once __DIR__ . "/Categoria.php";
     function getDettagli() {
         return "";
     }
+
+    public function setNome($_nome) {
+        if($_nome !== "") {
+            $this->nome = $_nome;
+        } else {
+            throw new Exception("il nome non può essere una stringa vuota!");
+        }
+    }
  }
